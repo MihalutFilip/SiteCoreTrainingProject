@@ -1,0 +1,9 @@
+
+@{
+     var item = Sitecore.Context.Database.GetItem("{71E0F566-C0AB-421B-937C-6F2E16E92BCC}");
+}
+
+<div>
+        Footer
+        @Html.Sitecore().Field("Copyright", item)
+</div>	

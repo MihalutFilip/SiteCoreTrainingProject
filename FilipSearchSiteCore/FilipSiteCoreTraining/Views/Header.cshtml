@@ -1,0 +1,8 @@
+@{
+    //var item = Sitecore.Context.Database.GetItem("/sitecore/content/Alexa/Home/Settings/GlobalSettings");
+    var item = Sitecore.Context.Database.GetItem("{350B224E-F277-4AAE-A612-4440EFD0F949}");
+}
+	Header
+    <div>
+         @Html.Sitecore().Field("name", item)
+    </div>
